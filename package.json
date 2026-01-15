@@ -1,0 +1,27 @@
+{
+  "name": "slicker-cabinets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omnicoder9/slicker-cabinets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omnicoder9/slicker-cabinets/issues"
+  },
+  "homepage": "https://github.com/omnicoder9/slicker-cabinets#readme",
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/jquery": "^3.5.33",
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1",
+    "typescript": "^5.9.3"
+  }
+}

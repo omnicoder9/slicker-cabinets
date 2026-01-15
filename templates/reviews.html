@@ -1,0 +1,21 @@
+{{ template "header" . }}
+
+<h2 class="mb-4">Client Reviews</h2>
+
+<div class="row">
+    {{ range .Reviews }}
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{ .Author }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                    {{ range $i, $e := makeSlice .Rating }}⭐{{ end }}
+                </h6>
+                <p class="card-text">"{{ .Text }}"</p>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+
+{{ template "footer" . }}

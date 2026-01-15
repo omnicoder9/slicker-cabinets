@@ -1,0 +1,83 @@
+{{ define "header" }}
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | Slicker Cabinets</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/static/css/style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Slicker Cabinets</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <!-- Core Cabinetry Submenu -->
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle" href="#">Core Cabinetry</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/#core-kitchen">Custom Kitchen Cabinetry</a></li>
+                <li><a class="dropdown-item" href="/#core-vanity">Bathroom Vanities</a></li>
+                <li><a class="dropdown-item" href="/#core-builtin">Built-in Cabinets</a></li>
+                <li><a class="dropdown-item" href="/#core-pantry">Pantry Systems</a></li>
+                <li><a class="dropdown-item" href="/#core-laundry">Laundry Room Cabinetry</a></li>
+                <li><a class="dropdown-item" href="/#core-mudroom">Mudroom Storage Systems</a></li>
+                <li><a class="dropdown-item" href="/#core-closet">Closet Cabinetry</a></li>
+                <li><a class="dropdown-item" href="/#core-garage">Garage Cabinets</a></li>
+              </ul>
+            </li>
+            
+            <li><hr class="dropdown-divider"></li>
+
+            <!-- Specialized Submenu -->
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle" href="#">Specialized Work</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/#spec-construction">Inset & Overlay Construction</a></li>
+                <li><a class="dropdown-item" href="/#spec-euro">Face-frame & Frameless</a></li>
+                <li><a class="dropdown-item" href="/#spec-drawers">Custom Drawer Systems</a></li>
+                <li><a class="dropdown-item" href="/#spec-panel">Appliance Paneling</a></li>
+                <li><a class="dropdown-item" href="/#spec-floating">Floating Cabinets</a></li>
+                <li><a class="dropdown-item" href="/#spec-island">Island Cabinetry</a></li>
+                <li><a class="dropdown-item" href="/#spec-wine">Wine Storage</a></li>
+                <li><a class="dropdown-item" href="/#spec-display">Display Cabinets</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/reviews">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <button id="theme-toggle" class="btn btn-outline-light btn-sm">
+           🌙 / ☀️
+        </button>
+        <a href="/login" class="btn btn-sm btn-secondary ms-2">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container mt-4">
+{{ end }}

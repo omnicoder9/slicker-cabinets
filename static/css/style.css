@@ -1,0 +1,101 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+[data-bs-theme="dark"] body {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 0;
+}
+
+.hero-section > div {
+    position: relative;
+    z-index: 1;
+}
+
+.service-card {
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+[data-bs-theme="dark"] .service-card {
+    background-color: #343a40;
+    border-color: #495057;
+}
+
+[data-bs-theme="dark"] .card-title {
+    color: #fff;
+}
+
+[data-bs-theme="dark"] .card-text {
+    color: #adb5bd;
+}
+
+[data-bs-theme="dark"] .dropdown-menu {
+    background-color: #343a40;
+    border-color: #495057;
+}
+
+[data-bs-theme="dark"] .dropdown-item {
+    color: #dee2e6;
+}
+
+[data-bs-theme="dark"] .dropdown-item:hover {
+    background-color: #495057;
+}
+
+[data-bs-theme="dark"] .dropdown-header {
+    color: #adb5bd;
+}
+
+[data-bs-theme="dark"] .dropdown-divider {
+    border-top-color: #495057;
+}
+
+/* --- Nested Dropdown CSS --- */
+@media (min-width: 992px) {
+    .dropdown-menu .dropend {
+        position: relative;
+    }
+    
+    /* Show submenu on hover */
+    .dropdown-menu .dropend:hover > .dropdown-menu {
+        display: block;
+        top: 0;
+        left: 100%;
+        margin-top: -6px; /* Adjust alignment */
+        margin-left: .1rem;
+    }
+}
+
+/* For mobile, we might need click handling or simple indentation */
+@media (max-width: 991px) {
+    .dropdown-menu .dropdown-menu {
+        display: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border: none;
+        background-color: transparent;
+    }
+    .dropdown-menu .dropend.show > .dropdown-menu {
+        display: block;
+    }
+}

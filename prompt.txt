@@ -1,0 +1,20 @@
+create a web app for a cabinet carpentry business:
+ - company name: slicker cabinets, owned and operated by Chris Cool
+ - tech stack: go, gin framework, jquery, typescript, PostgreSQL
+ - nav bar buttons: services, reviews, contact me, about
+    - services button should open a nested dropdown with categories and subcategories
+ - contact me page: forms for name, email address, message; sanitized/secure inputs, button to submit message; message goes to an email address; when the user submits, a confirmation message should appear
+ - each service gets its own section on the main page
+ - for each service, list a short description and include an example photo, with a button that says "get quote"
+ - when the user clicks the "get quote" button for a particular service, it goes to the contact me page and auto populates the message form with an example message specific to the service.
+ - about page should include an example photo and short bio
+ - dark/light mode switching button in navbar
+ - use generic publicly available images
+ - log in feature for internal portal access
+ - data hard-coded in the back end for demo purposes
+ - create simple but realistic rest apis and data models
+ - include any necessary or desirable imports for this project
+
+services:
+Core Cabinetry Services: Custom kitchen cabinetry, Bathroom vanities, Built-in cabinets (living rooms, offices, libraries), Pantry systems, Laundry room cabinetry, Mudroom storage systems, Closet cabinetry (not wire systems), Garage cabinets (wood or hybrid systems)
+Specialized Cabinet Work: Inset, overlay, and full-overlay cabinet construction; Face-frame and frameless (European) cabinets; Custom drawer systems (dovetail, soft-close); Appliance paneling (dishwashers, refrigerators); Floating cabinets; Island cabinetry; Wine storage cabinets; Display cabinets (glass doors, lighting)
